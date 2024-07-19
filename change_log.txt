@@ -1,0 +1,50 @@
+Would update file: sample-app.yaml
+Would update file: sample-app.yaml
+Skipping actual update for file: sample-app.yaml
+Skipping actual update for file: sample-app.yaml
+Would update file: sample-app.yaml
+Would update file: sample-app.yaml
+Updated file: sample-app.yaml
+Updated file: sample-app.yaml
+2024-06-22 15:44:19 - Updated file: sample-app.yaml
+2024-06-22 15:44:42 - Updated file: sample-app.yaml
+2024-06-22 15:52:45 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
+2024-06-22 15:52:45 - Skipping annotation 'environment=production' for file: sample-app.yaml (already exists)
+2024-06-22 15:52:45 - Skipping label 'app=myapp' for file: sample-app.yaml (already exists)
+2024-06-22 15:52:45 - Skipping label 'tier=backend' for file: sample-app.yaml (already exists)
+2024-06-22 15:53:39 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
+2024-06-22 15:53:39 - Skipping annotation 'environment=production' for file: sample-app.yaml (already exists)
+2024-06-22 15:53:39 - Skipping label 'app=myapp' for file: sample-app.yaml (already exists)
+2024-06-22 15:53:39 - Skipping label 'tier=backend' for file: sample-app.yaml (already exists)
+2024-06-22 16:06:51 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
+2024-06-22 16:06:51 - Updating annotation 'environment' from 'production1' to 'production' for file: sample-app.yaml
+2024-06-22 16:06:51 - Skipping label 'app=myapp' for file: sample-app.yaml (already exists)
+2024-06-22 16:06:51 - Skipping label 'tier=backend' for file: sample-app.yaml (already exists)
+2024-06-22 16:06:51 - Updated file: sample-app.yaml
+2024-06-22 16:07:33 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
+2024-06-22 16:07:33 - Skipping annotation 'environment=production' for file: sample-app.yaml (already exists)
+2024-06-22 16:07:33 - Skipping label 'app=myapp' for file: sample-app.yaml (already exists)
+2024-06-22 16:07:33 - Updating label 'tier' from 'backend' to 'backend1' for file: sample-app.yaml
+2024-06-22 16:07:33 - Updated file: sample-app.yaml
+2024-06-22 16:07:42 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
+2024-06-22 16:07:42 - Skipping annotation 'environment=production' for file: sample-app.yaml (already exists)
+2024-06-22 16:07:42 - Skipping label 'app=myapp' for file: sample-app.yaml (already exists)
+2024-06-22 16:07:42 - Updated file: sample-app.yaml
+2024-06-22 16:10:19 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
+2024-06-22 16:10:19 - Skipping annotation 'environment=production' for file: sample-app.yaml (already exists)
+2024-06-22 16:10:19 - Skipping label 'app=myapp' for file: sample-app.yaml (already exists)
+2024-06-22 16:10:19 - Skipping label 'tier1=backend1' for file: sample-app.yaml (already exists)
+2024-06-22 16:11:29 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
+2024-06-22 16:11:29 - Skipping annotation 'environment=production' for file: sample-app.yaml (already exists)
+2024-06-22 16:11:29 - Removing label 'tier1' for file: sample-app.yaml
+2024-06-22 16:11:29 - Would update file: sample-app.yaml
+2024-06-22 16:11:45 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
+2024-06-22 16:11:45 - Skipping annotation 'environment=production' for file: sample-app.yaml (already exists)
+2024-06-22 16:11:45 - Removing label 'tier1' for file: sample-app.yaml
+2024-06-22 16:11:45 - Updated file: sample-app.yaml
+2024-06-22 16:12:23 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
+2024-06-22 16:12:23 - Skipping annotation 'environment=production' for file: sample-app.yaml (already exists)
+2024-06-22 16:12:23 - Updated file: sample-app.yaml
+2024-06-24 11:36:45 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
+2024-06-24 11:36:45 - Skipping annotation 'environment=production' for file: sample-app.yaml (already exists)
+2024-06-24 11:36:45 - Skipping label 'hello=world' for file: sample-app.yaml (already exists)
