@@ -1,0 +1,1 @@
+# -manage-namespace-metadata
