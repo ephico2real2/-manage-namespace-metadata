@@ -41,19 +41,21 @@ def update_yaml_files(directory, annotations, labels, remove_annotations, remove
                 updated = False
                 for doc in documents:
                     if doc.get('kind') == 'Application':
-                        managed_metadata = doc.get('spec', {}).get('syncPolicy', {}).get('managedNamespaceMetadata', {})
-                        doc['spec']['syncPolicy']['managedNamespaceMetadata'] = managed_metadata
-                        
+                        managed_metadata = doc.get('spec', {}).get('syncPolicy', {}).get('managedNamespaceMetadata')
+                        if not managed_metadata:
+                            managed_metadata = {}
+                            doc['spec']['syncPolicy']['managedNamespaceMetadata'] = managed_metadata
+                            
                         # Update annotations
                         metadata_annotations = managed_metadata.get('annotations', {})
                         for key, value in annotations.items():
                             if key in metadata_annotations:
                                 if metadata_annotations[key] == value:
-                                    log_change(f"Skipping annotation '{key}={value}' for file: {filename} (already exists)")
                                     logging.info(f"Skipping annotation '{key}={value}' for file: {filename} (already exists)")
+                                    log_change(f"Skipping annotation '{key}={value}' for file: {filename} (already exists)")
                                 else:
-                                    log_change(f"Updating annotation '{key}' from '{metadata_annotations[key]}' to '{value}' for file: {filename}")
                                     logging.info(f"Updating annotation '{key}' from '{metadata_annotations[key]}' to '{value}' for file: {filename}")
+                                    log_change(f"Updating annotation '{key}' from '{metadata_annotations[key]}' to '{value}' for file: {filename}")
                                     metadata_annotations[key] = value
                                     updated = True
                             else:
@@ -62,8 +64,8 @@ def update_yaml_files(directory, annotations, labels, remove_annotations, remove
                         
                         for key in remove_annotations:
                             if key in metadata_annotations:
-                                log_change(f"Removing annotation '{key}' for file: {filename}")
                                 logging.info(f"Removing annotation '{key}' for file: {filename}")
+                                log_change(f"Removing annotation '{key}' for file: {filename}")
                                 del metadata_annotations[key]
                                 updated = True
                         
@@ -74,11 +76,11 @@ def update_yaml_files(directory, annotations, labels, remove_annotations, remove
                         for key, value in labels.items():
                             if key in metadata_labels:
                                 if metadata_labels[key] == value:
-                                    log_change(f"Skipping label '{key}={value}' for file: {filename} (already exists)")
                                     logging.info(f"Skipping label '{key}={value}' for file: {filename} (already exists)")
+                                    log_change(f"Skipping label '{key}={value}' for file: {filename} (already exists)")
                                 else:
-                                    log_change(f"Updating label '{key}' from '{metadata_labels[key]}' to '{value}' for file: {filename}")
                                     logging.info(f"Updating label '{key}' from '{metadata_labels[key]}' to '{value}' for file: {filename}")
+                                    log_change(f"Updating label '{key}' from '{metadata_labels[key]}' to '{value}' for file: {filename}")
                                     metadata_labels[key] = value
                                     updated = True
                             else:
@@ -87,8 +89,8 @@ def update_yaml_files(directory, annotations, labels, remove_annotations, remove
                         
                         for key in remove_labels:
                             if key in metadata_labels:
-                                log_change(f"Removing label '{key}' for file: {filename}")
                                 logging.info(f"Removing label '{key}' for file: {filename}")
+                                log_change(f"Removing label '{key}' for file: {filename}")
                                 del metadata_labels[key]
                                 updated = True
 
@@ -100,16 +102,16 @@ def update_yaml_files(directory, annotations, labels, remove_annotations, remove
                         logging.info(yaml.dump_all(documents))
                     
                     if dry_run:
-                        log_change(f"Would update file: {filename}")
                         logging.info(f"Would update file: {filename}")
+                        log_change(f"Would update file: {filename}")
                     elif apply_metadata:
                         with open(file_path, 'w') as file:
                             yaml.safe_dump_all(documents, file)
-                        log_change(f"Updated file: {filename}")
                         logging.info(f"Updated file: {filename}")
+                        log_change(f"Updated file: {filename}")
                     else:
-                        log_change(f"Skipping actual update for file: {filename}")
                         logging.info(f"Skipping actual update for file: {filename}")
+                        log_change(f"Skipping actual update for file: {filename}")
 
     except Exception as e:
         logging.error(f"An error occurred: {e}")

@@ -22,5 +22,4 @@ spec:
         linkerd.io/inject: enabled
       labels:
         app: myapp
-        hello: world
         tier: backend1

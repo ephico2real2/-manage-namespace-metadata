@@ -48,3 +48,17 @@ Updated file: sample-app.yaml
 2024-06-24 11:36:45 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
 2024-06-24 11:36:45 - Skipping annotation 'environment=production' for file: sample-app.yaml (already exists)
 2024-06-24 11:36:45 - Skipping label 'hello=world' for file: sample-app.yaml (already exists)
+2024-07-19 17:51:54 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
+2024-07-19 17:51:54 - Skipping annotation 'environment=production' for file: sample-app.yaml (already exists)
+2024-07-19 17:51:54 - Skipping label 'hello=world' for file: sample-app.yaml (already exists)
+2024-07-24 11:45:51 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
+2024-07-24 11:45:51 - Skipping annotation 'environment=production' for file: sample-app.yaml (already exists)
+2024-07-24 11:45:51 - Skipping label 'hello=world' for file: sample-app.yaml (already exists)
+2024-07-24 11:47:32 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
+2024-07-24 11:47:32 - Skipping annotation 'environment=production' for file: sample-app.yaml (already exists)
+2024-07-24 11:47:32 - Skipping label 'hello=world' for file: sample-app.yaml (already exists)
+2024-07-24 11:47:46 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
+2024-07-24 11:47:46 - Skipping annotation 'environment=production' for file: sample-app.yaml (already exists)
+2024-07-24 11:47:46 - Skipping label 'hello=world' for file: sample-app.yaml (already exists)
+2024-07-24 11:47:46 - Removing label 'hello' for file: sample-app.yaml
+2024-07-24 11:47:46 - Updated file: sample-app.yaml
