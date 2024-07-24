@@ -6,8 +6,8 @@ import argparse
 import logging
 from datetime import datetime
 
-# Set up logging
-logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
+# Set up logging with timestamp
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 change_log = 'change_log.txt'
 
 def log_change(message):

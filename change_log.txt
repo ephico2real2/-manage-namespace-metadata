@@ -62,3 +62,7 @@ Updated file: sample-app.yaml
 2024-07-24 11:47:46 - Skipping label 'hello=world' for file: sample-app.yaml (already exists)
 2024-07-24 11:47:46 - Removing label 'hello' for file: sample-app.yaml
 2024-07-24 11:47:46 - Updated file: sample-app.yaml
+2024-07-24 12:00:22 - Skipping annotation 'linkerd.io/inject=enabled' for file: sample-app.yaml (already exists)
+2024-07-24 12:00:22 - Skipping annotation 'environment=production' for file: sample-app.yaml (already exists)
+2024-07-24 12:00:22 - Removing label 'hello' for file: sample-app.yaml
+2024-07-24 12:00:22 - Updated file: sample-app.yaml
